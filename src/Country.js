@@ -50,7 +50,6 @@ function Country({route, navigation}) {
         <FlatList
           data={DATA}
           renderItem={renderItem}
-          keyExtractor={item => item.id}
         />
       </View>
     </SafeAreaView>
@@ -70,7 +69,8 @@ const style = StyleSheet.create({
     textAlign: 'center',
   },
   item: {
-    backgroundColor: '#f9c2ff',
+    backgroundColor: 'grey',
+    color:'#fff',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
